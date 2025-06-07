@@ -1,0 +1,34 @@
+services:
+  arma3:
+    build: .
+    image: ghcr.io/brettmayson/arma3server/arma3server:latest
+    platform: linux/amd64
+    container_name: arma3
+    ports:
+      - "2302:2302/udp"   # Game port
+      - "2303:2303/udp"   # Steam query port
+      - "2306:2306/udp"
+    volumes:
+      - './missions:/arma3/mpmissions'
+      - './configs:/arma3/configs'
+      - './mods:/arma3/mods'
+      - './servermods:/arma3/servermods'
+      - 'addons:/arma3/addons'
+      - 'argo:/arma3/argo'
+      - 'enoch:/arma3/enoch'
+      - 'expansion:/arma3/expansion'
+      - 'heli:/arma3/heli'
+      - 'jets:/arma3/jets'
+      - 'orange:/arma3/orange'
+      - 'steamcmd:/steamcmd'
+    env_file: .env
+    restart: unless-stopped
+volumes:
+  addons:
+  argo:
+  enoch:
+  expansion:
+  heli:
+  jets:
+  orange:
+  steamcmd:
