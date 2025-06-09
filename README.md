@@ -29,7 +29,7 @@ run the python script with `python rename_mods.py` in order to rename each folde
 ## Step 2 (installation) : Modify env variable
 
 You need to setup Steam credentials.
-Put username (without "") and password in the correct places inside the `main.cfg` file
+Put username (without "") and password in the correct places inside the `.env` file
 
 ## Step 3 (installation) : Port forwarding
 
