@@ -1,6 +1,8 @@
 mods
 configs/profiles/DataCache/
 configs/profiles/home/main/
+configs/profiles/mpStatistics*
+
 servermods
 addons
 argo
