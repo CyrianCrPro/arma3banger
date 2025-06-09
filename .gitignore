@@ -1,7 +1,8 @@
 mods
 configs/profiles/DataCache/
-configs/profiles/home/main/
+configs/profiles/home/
 configs/profiles/mpStatistics*
+configs/profiles/home/main/
 
 servermods
 addons
